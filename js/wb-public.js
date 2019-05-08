@@ -13,7 +13,7 @@
 // });
 
 
-//sidebar
+//-------------------- addthis.js --------------------//
 $(document).ready(function () {
     $(".rightEcBox .airlinesBox ul li a").mouseover(function () {
         $(this).addClass("animated rotateIn");
@@ -33,12 +33,13 @@ $(document).ready(function () {
         $(".rightEcBox").stop().toggleClass('on');
     });
 });
-
+//---------- end ----------//
 
 
 
 $(function () {
     var log = console.log.bind();
+    //手机端导航单按钮
     $('.home-header .main-btn').click(function(){
         $(this).toggleClass('open');
         if ($(this).is('.open')) {
@@ -47,14 +48,14 @@ $(function () {
             $('.home-header .main-nav').slideUp();
         }
     })
-
+    //手机端导航图标
     var mobile_btn = '<i class="mobile-navbtn"></i>'
     $('.home-header .nn-menu-f>li,.home-header .nn-menu-s>li').each(function(){
         if($(this).children('.nn-menu-s,.nn-menu-t').length){
             $(this).append(mobile_btn);
         }
     })
-
+    //手机端导航收缩
     $(document).on("click", ".mobile-navbtn", function (e) {
         if (!$(this).is('.open')) {
             $(this).addClass('open')
@@ -66,20 +67,15 @@ $(function () {
         e.preventDefault();
     })
 
-    //二级菜单居中
-    $('.header-nav .f-menu>.hasdrop').mouseenter(function () {
-        if ($(document).width() > 991) {
-            var s_menuX = ($(this).width() - $(this).children('.drop-menu').width()) / 2;
-            $(this).children('.drop-menu').css({
-                'margin-left': s_menuX
-            });
+    
+    //PC菜单固定
+    $(window).scroll(function () {
+        if ($(document).scrollTop() > 30 && $(window).width() > 991) {
+            var dom_h =  $('.home-header .nav-main').addClass('is-fixed').parent();
+            $('.home-header .nav-main').addClass('is-fixed');
+            $('.home-header').css('height',dom_h);
+        } else {
+            $('.home-header .nav-main').removeClass('is-fixed')
         }
     })
-    // $(window).scroll(function () {
-    //     if ($(document).scrollTop() > 200 && $(window).width() > 991) {
-    //         $('.home-header .navbar').addClass('is-fixed')
-    //     } else {
-    //         $('.home-header .navbar').removeClass('is-fixed')
-    //     }
-    // })
 })
