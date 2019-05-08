@@ -1,0 +1,316 @@
+.relative {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.at-resp-share-element .at4-share-count-container {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.overflow {
+  overflow: hidden;
+}
+
+.marginAuto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.textHidden {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: keep-all;
+  white-space: nowrap;
+}
+
+.clearPic {
+  background: none;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  border-radius: 0px;
+}
+
+.Font {
+  font-family: ;
+}
+
+.padding {
+  padding: 0px !important;
+}
+
+.margin {
+  margin: 0px !important;
+}
+
+.noneLine {
+  text-decoration: none !important;
+}
+
+#at4-share {
+  top: 40% !important;
+}
+
+.rightEcBox {
+  width: 54px;
+  height: 400px;
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  top: 0px;
+  margin: auto;
+  z-index: 99999;
+  transition: .3s;
+}
+
+.rightEcBox.on {
+  height: 48px;
+  overflow: hidden;
+  transition: .3s;
+}
+
+.rightEcBox.on .ec_top {
+  display: none;
+}
+
+.rightEcBox.on .ec_bottom {
+  display: block;
+}
+
+.ec_bottom {
+  display: none;
+  zoom: .8;
+
+}
+
+.rightEcBox .at-icon-wrapper {
+  width: 40px !important;
+  ;
+  height: 40px !important;
+}
+
+
+.rightEcBox .shareBox {
+  min-height: 175px;
+}
+
+.rightEcBox .airlinesBox {
+  margin-bottom: 100px;
+  margin-top: 68px;
+}
+
+
+
+.rightEcBox .airlinesBox ul li {
+  border-top: solid 1px #24272c;
+  height: 40px;
+  line-height: 40px;
+}
+
+.rightEcBox .airlinesBox ul li:hover {
+  background: #f9694e;
+}
+
+.rightEcBox .airlinesBox ul li a img {
+  width: 20px;
+  height: 20px;
+}
+
+.addthis-smartlayers-desktop {
+  display: none
+}
+
+.rightEcBox .airlinesBox ul li .absolute {
+  display: none;
+  right: 50px;
+  top: 0px;
+  width: 300px;
+  background: #f9694e;
+  color: #fff;
+  padding: 0px 10px;
+  height: 39px;
+  line-height: 39px;
+}
+
+.rightEcBox .airlinesBox ul li:hover .absolute {
+  display: block;
+}
+
+.rightEcBox .rightECTools {
+  position: absolute;
+  bottom: 0px;
+}
+
+.rightEcBox .rightECTools .x {
+  cursor: pointer;
+  margin: 0 auto;
+
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rightEcBox .rightECTools ul li {
+  border-top: solid 1px #24272c;
+  height: 48px;
+  line-height: 40px;
+  margin-bottom: 0;
+  background: #1a1b1f;
+  z-index: 0;
+}
+
+.rightEcBox .rightECTools ul li a {
+  width: 54px;
+  height: 40px;
+}
+
+.rightEcBox .rightECTools ul li .t1 {
+  background: url(../images/rightEc_01.png) no-repeat 50%;
+}
+
+.rightEcBox .rightECTools ul li .t2 {
+  background: url(../images/rightEc_02.png) no-repeat 50%;
+}
+
+.rightEcBox .rightECTools ul li .t3 {
+  background: url(../images/rightEc_03.png) no-repeat 50%;
+}
+
+.rightEcBox .rightECTools ul li .t4 {
+  background: url(../images/rightEc_04.png) no-repeat 50%;
+}
+
+.rightEcBox .rightECTools ul li .codeBox {
+  display: none;
+  left: -150px;
+  bottom: 0px;
+  z-index: 999999999999;
+}
+
+.rightEcBox .rightECTools ul li.code:hover .codeBox {
+  display: block;
+}
+
+.phone-c {
+  background: none !important;
+  border: none !important;
+}
+
+.phone-c-2 {
+  height: 45px !important;
+}
+
+.phone {
+  background: none !important;
+  height: 48px !important;
+  position: relative;
+}
+
+.phone-show {
+  display: none;
+  left: -180px;
+  top: 0px;
+  width: 180px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: #f9694e;
+  letter-spacing: 1px;
+}
+
+.phone:hover .phone-show {
+  display: block;
+  position: absolute;
+  color: #fff;
+}
+
+.rightECTools-top {
+  top: -43%;
+}
+
+.rightECTools-top ul li {
+  border-top: none !important;
+  height: 45px !important;
+  line-height: 45px !important;
+}
+
+.rightECTools-top ul li a {
+  text-align: center
+}
+
+.facebook,
+.wechat,
+.sina_weibo,
+.tx_weibo,
+.tx_more {
+  height: 48px !important;
+  border: none !important;
+}
+
+.facebook {
+  background: #3b5997 !important;
+}
+
+.wechat {
+  background: #1da1f2 !important;
+}
+
+.sina_weibo {
+  background: #cb2027 !important;
+}
+
+.tx_weibo {
+  background: #0077b5 !important;
+}
+
+.tx_more {
+  background: #ff6550 !important;
+}
+
+.rightECTools li.c a {
+  height: 48px !important;
+  text-align: center;
+}
+
+.rightECTools li.c a:hover img {
+  width: 60%;
+}
+
+.rightECTools li.c a img {
+  text-align: center;
+  vertical-align: middle;
+  -moz-transition: all 0.4s;
+  /* Firefox 4 */
+  -webkit-transition: all 0.4s;
+  /* Safari 鍜� Chrome */
+  -o-transition: all 0.4s;
+  /* Opera */
+  transition: all 0.4s;
+}
+
+.rightEcBox .rightECTools ul li a {
+  display: block;
+}
+
+.addthis-smartlayers-desktop {
+  display: none
+}
+
+
+.at-resp-share-element .at-share-btn:focus, .at-resp-share-element .at-share-btn:hover{
+    transform: translateX(-12px)!important;
+}

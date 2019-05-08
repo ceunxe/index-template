@@ -1,0 +1,56 @@
+/* ----------layer----------*/
+.layer-wrapper {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 10;
+}
+
+.layer-container {
+    width: 100%;
+    max-width: 700px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+@media (max-width:767px){
+    .layer-container{
+        max-width: 100%;
+        height: 0;
+        padding-bottom: 44%;
+    }
+}
+
+.layer-content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.layer-item{
+    display: none;
+    position: relative;
+    height: 100%;;
+}
+
+.layer-item iframe{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 11;
+}
+
+@media (max-width:767px){
+    .layer-item iframe{
+        width: 90%;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+}
